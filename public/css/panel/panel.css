@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'MoskNormal';
+    src: url('/fonts/Mosk-Normal-400.tff');
+    src: url('/fonts/Mosk-Normal-400.woff2') format('woff2'),
+    url('/fonts/Mosk-Normal-400.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MoskBold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/Mosk-bold-700.tff');
+}
+@font-face {
+    font-family: Vazir;
+    src: url('/fonts/vazir/Vazir.eot');
+    src: url('/fonts/vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/vazir/Vazir.woff2') format('woff2'),
+    url('/fonts/vazir/Vazir.woff') format('woff'),
+    url('/fonts/vazir/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'IRANSans';
+    src: url('/fonts/iransans_full/IRANSans-UltraLight.eot');
+    src: url('/fonts/iransans_full/IRANSans-UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/iransans_full/IRANSans-UltraLight.woff2') format('woff2'),
+    url('/fonts/iransans_full/IRANSans-UltraLight.woff') format('woff'),
+    url('/fonts/iransans_full/IRANSans-UltraLight.ttf') format('truetype'),
+    url('/fonts/iransans_full/IRANSans-UltraLight.svg#IRANSans-UltraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('/fonts/iransans_full/IRANSans-Medium.eot');
+    src: url('/fonts/iransans_full/IRANSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/iransans_full/IRANSans-Medium.woff2') format('woff2'),
+    url('/fonts/iransans_full/IRANSans-Medium.woff') format('woff'),
+    url('/fonts/iransans_full/IRANSans-Medium.ttf') format('truetype'),
+    url('/fonts/iransans_full/IRANSans-Medium.svg#IRANSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('/fonts/iransans_full/IRANSans.eot');
+    src: url('/fonts/iransans_full/IRANSans.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/iransans_full/IRANSans.woff2') format('woff2'),
+    url('/fonts/iransans_full/IRANSans.woff') format('woff'),
+    url('/fonts/iransans_full/IRANSans.ttf') format('truetype'),
+    url('/fonts/iransans_full/IRANSans.svg#IRANSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('/fonts/iransans_full/IRANSans-Light.eot');
+    src: url('/fonts/iransans_full/IRANSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/iransans_full/IRANSans-Light.woff2') format('woff2'),
+    url('/fonts/iransans_full/IRANSans-Light.woff') format('woff'),
+    url('/fonts/iransans_full/IRANSans-Light.ttf') format('truetype'),
+    url('/fonts/iransans_full/IRANSans-Light.svg#IRANSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('/fonts/iransans_full/IRANSans-Bold.eot');
+    src: url('/fonts/iransans_full/IRANSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/iransans_full/IRANSans-Bold.woff2') format('woff2'),
+    url('/fonts/iransans_full/IRANSans-Bold.woff') format('woff'),
+    url('/fonts/iransans_full/IRANSans-Bold.ttf') format('truetype'),
+    url('/fonts/iransans_full/IRANSans-Bold.svg#IRANSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    font-family: 'IRANSans';
+    font-weight: normal;
+    font-style: normal;
+    position: relative;
+}
+.ibox-content{
+    font-family: Vazir,sans-serif;
+}
+.body__bg{
+   background-image: url('/img/bg.jpg');
+    background-size: cover;
+}
+.btn-primary{
+    background-color: #28c8f8;
+    border-color: #28c8f8;
+}
+.btn__primary{
+    background-color: #FFCC00;
+    border-radius: 20px;
+    color: #242424;
+    padding: 8px 15px 8px 15px;
+    border: none;
+}
+.btn__light{
+    background-color: rgba(76, 175, 80, 0);
+    color: #949494;
+    border: 2px solid #979797;
+    padding: 12px 0px 3px 0px;
+    border-radius: 20px;
+
+}
+.btn__menu{
+    background-color: #FFCC00;
+    color: #fff;
+}
+.btn__save{
+    background-color: #61AC41;
+    border-radius: 20px;
+    color: #fff;
+    padding: 8px 0px 8px 0px;
+    width: 142px;
+    border: none;
+}
+.btn__package {
+    background-color: #646262;
+    border-radius: 20px;
+    padding: 8px 15px 8px 15px;
+    color: #F8CD46;
+}
+.btn__table{
+    color: #676A6C;
+    border: none;
+    padding: 12px 0px 3px 0px;
+}
+.btn__table.active{
+    background-color: #ebebeb;
+    border-radius: 20px;
+    color: black;
+    border: 1px solid #C3C3C3;
+    padding: 12px 0px 3px 0px;
+}
+
+.btn__{
+    font-size: 14px;
+    min-width:110px;
+    font-weight: 600;
+    font-family: 'Dosis',sans-serif;
+}
+
+.product-box{
+    -webkit-box-shadow: 0 3px 7px 0 #a8a8a8;
+    box-shadow: 0 3px 7px 0 #a8a8a8;
+}
+.product-price{
+   background-color: #454545;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 6px 25px;
+
+}
+.product__title{
+    padding: 20px 0;
+}
+
+.inp__login{
+    font-family: MoskNormal;
+    border-radius: 58px;
+    padding: 19px 20px;
+    border: none;
+    background: #E3E3E3;
+}
+.inp__description{
+    font-size: 13px;
+    color: #676A6C;
+}
+.metismenu>li.active{
+    border-right: 4px solid #28c8f8;
+
+}
+.metismenu>li.active>a{
+    color: #28c8f8;
+}
+.metismenu>li>a{
+    color: #949494;
+}
+
+.main-color{
+    background-color: #242424;
+}
+.second-color{
+    background-color: #F8CD46;
+}
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+.table-responsive{
+    direction: rtl;
+    color: black;
+}
+.table-responsive >table > tbody > tr > td{
+    font-family: Vazir,sans-serif;
+    text-align: right;
+    border-bottom: 1px solid #e7eaec;
+}
+.table > tbody > tr > td{
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+tr > td > select{
+    font-family: 'MoskNormal';
+}
+.table > thead > tr > th{
+    text-align: right;
+}
+.log > tbody > tr > td, .log > thead > tr > th{
+    text-align: left;
+}
+.ibox-title h5{
+    float: right;
+    font-family: Vazir,sans-serif;
+    font-size: 18px;
+    color: #000000;
+}
+.ibox-tools{
+    text-align: left;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+}
+thead{
+    font-family: 'Vazir' , sans-serif;
+    color: Black;
+    font-size: 16px;
+}
+tbody{
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.form-control{
+    text-align: right;
+}
+.form-group{
+    text-align: right;
+}
+.icon-:before {
+    content: "\e900";
+    color: #979797;
+}
+.icon-box:before {
+    content: "\e901";
+    color: #949494;
+}
+.icon-Combined-Shape:before {
+    content: "\e902";
+    color: #979797;
+}
+.icon-dashboard:before {
+    content: "\e903";
+    color: #949494;
+}
+.icon-Group-3:before {
+    content: "\e904";
+    color: #949494;
+}
+.icon-Shape:before {
+    content: "\e905";
+    color: #979797;
+}
+.nav > li.active > a i:before{
+    color: #F8CD46;
+}

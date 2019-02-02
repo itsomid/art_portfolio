@@ -1,0 +1,37 @@
+<?php
+
+namespace App\Http\Controllers\website;
+
+use App\Image;
+use App\User;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class HomeController extends Controller
+{
+    public function index()
+    {
+
+        $users =  User::all();
+        $images = Image::with('user')->paginate(9);
+        return view('website.home',['users'=>$users,'images'=>$images]);
+    }
+
+
+
+    public function getProfile(Request $request,$id)
+    {
+        $user = User::find($id);
+        $images = Image::whereUserId($id)->get();
+//        $images = Image::all();
+        return view('website.single_user_profile',['user'=>$user,'images'=>$images]);
+    }
+
+    public function getImage($id)
+    {
+        $image = Image::with('user')->find($id);
+         $images = Image::orderByRaw("RAND()")->get();
+        return view('website.single-image',['image'=>$image,'images'=>$images]);
+
+    }
+}
