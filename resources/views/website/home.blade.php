@@ -264,7 +264,7 @@
                         <h4>
                            {{$user->first_name}} {{$user->last_name}}
                         </h4>
-                        <a href="{{route('profile',['id'=>$user->id])}}">
+                        <a href="{{route('profiles',['id'=>$user->id])}}">
                             مشاهده عکس ها
                             <span class="camera-icn icn"></span>
                         </a>

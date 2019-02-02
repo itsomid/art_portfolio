@@ -121,7 +121,7 @@
 
         <section id="public-bottom-section" class="row">
 
-            <article class="flex-row" style="margin-bottom: 100px">
+            <article class="flex-row" style="margin-bottom: 100px;justify-content: space-between !important; flex-flow: row wrap ">
                 @foreach($images as $image)
                 {{--<div class="item">--}}
                     {{--<img src="{{asset($image->image_url)}}">--}}
@@ -131,7 +131,7 @@
                     {{--</div>--}}
                 {{--</div>--}}
 
-                    <div class="img-item">
+                    <div class="img-item" style="margin: 20px 3px !important;width: 30% !important;">
                         <div class="img-hover">
                             <h4>
                                 <a href="public-profile.html" class="shooter-pack">

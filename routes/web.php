@@ -3,7 +3,12 @@
 //Website
 
 Route::get('/','website\HomeController@index')->name('home');
-Route::get('/profile/{id}','website\HomeController@getProfile')->name('profile');
+
+Route::get('/profiles','website\HomeController@allProfile')->name('profiles');
+Route::get('/profile/{id}','website\HomeController@getProfile')->name('profile/single');
+Route::get('/art/{name}','website\HomeController@getArt')->name('art');
+
+
 Route::get('/image/{id}','website\HomeController@getImage')->name('image/single');
 Route::post('/login','website\HomeController@login')->name('login');
 Auth::routes();

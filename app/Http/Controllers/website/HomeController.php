@@ -27,11 +27,23 @@ class HomeController extends Controller
         return view('website.single_user_profile',['user'=>$user,'images'=>$images]);
     }
 
+    public function allProfile()
+    {
+
+        return view('website.users_profile',['users'=> User::all()]);
+    }
     public function getImage($id)
     {
         $image = Image::with('user')->find($id);
          $images = Image::orderByRaw("RAND()")->get();
         return view('website.single-image',['image'=>$image,'images'=>$images]);
+
+    }
+
+    public function getArt($name)
+    {
+       $users_image = User::with('image')->where('art_category',$name)->get();
+       return view('website.main_art',['images'=>$users_image]);
 
     }
 }

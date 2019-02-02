@@ -65,7 +65,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{{route('home')}}">عکاس باشی</a>
+                    <a class="navbar-brand" href="{{route('home')}}">هنرمندی</a>
                     <a href data-toggle="modal" data-target="#quick-sign-modal" id="sign-in-res"><i  class="fa fa-sign-in"></i></a>
                     <a id="search-res"><i class="fa fa-search"></i></a>
                     <form id="srch-form-res" action role="form">
@@ -83,18 +83,18 @@
                             </a>
                             <i class="fa fa-caret-up up-caret1"></i>
                             <ul class="dropdown-menu drop-ul-lvl2">
-                                <li><a href="search.html" ><i class="inspire-icn icn"></i> ادبیات</a></li>
-                                <li><a href="search.html" ><i class="seasons-icn icn"></i>   حرکات نمایشی</a></li>
-                                <li><a href="search.html" ><i class="masks-icn icn"></i>سینما</a></li>
-                                <li><a href="search.html" ><i class="summer-icn icn"></i>     معماری</a></li>
-                                <li><a href="search.html" ><i class="music-icn icn"></i>      موسیقی</a></li>
-                                <li><a href="search.html" ><i class="fall-icn icn"></i> هنر تجسمی</a></li>
-                                <li><a href="search.html" ><i class="winter-icn icn"></i>   هنر ترسیمی</a></li>
+                                <li><a href="{{route('art',['name'=>'literature'])}}" ><i class="inspire-icn icn"></i>ادبیات</a></li>
+                                <li><a href="{{route('art',['name'=>'performing'])}}" ><i class="seasons-icn icn"></i>حرکات نمایشی</a></li>
+                                <li><a href="{{route('art',['name'=>'cinema'])}}" ><i class="masks-icn icn"></i>سینما</a></li>
+                                <li><a href="{{route('art',['name'=>'architecture'])}}" ><i class="summer-icn icn"></i>معماری</a></li>
+                                <li><a href="{{route('art',['name'=>'music'])}}" ><i class="music-icn icn"></i>موسیقی</a></li>
+                                <li><a href="{{route('art',['name'=>'visual'])}}" ><i class="fall-icn icn"></i>هنر تجسمی</a></li>
+                                <li><a href="{{route('art',['name'=>'painting'])}}" ><i class="winter-icn icn"></i>هنر ترسیمی</a></li>
 
                             </ul>
                         </li>
 
-                        <li><a href="{{route('')}}" ><i class="fa fa-user-circle-o fa-custom"></i> پروفایل عمومی هنرمندان </a></li>
+                        <li><a href="{{route('profiles')}}" ><i class="fa fa-user-circle-o fa-custom"></i> هنرمندان </a></li>
                         <li><a href="gallery.html" ><i class="fa fa-photo fa-custom"></i> گالری تصاویر </a></li>
                         <li><a href="search.html" ><i class="fab fa-searchengin fa-custom"></i> صفحه جستجو </a></li>
 
