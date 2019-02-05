@@ -197,9 +197,7 @@ body {
     border-right: 4px solid #28c8f8;
 
 }
-.metismenu>li.active>a{
-    color: #28c8f8;
-}
+
 .metismenu>li>a{
     color: #949494;
 }
@@ -292,6 +290,6 @@ tbody{
     content: "\e905";
     color: #979797;
 }
-.nav > li.active > a i:before{
-    color: #F8CD46;
+.nav > li > a i{
+    margin-left: 6px;
 }

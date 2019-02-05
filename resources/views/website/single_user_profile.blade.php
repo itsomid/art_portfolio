@@ -1,6 +1,6 @@
 @extends('website.layouts.main')
 @section('title')
-   هنرمندی
+    {{$user->first_name}} {{$user->last_name}}
 @endsection
 @section('content')
     <main id="public-profile" class="container-fluid">
@@ -43,8 +43,22 @@
             </article>
         </section>
 
-        <section id="public-middle-section" class="row">
 
+
+        <section id="public-middle-section" class="row">
+            <div class="head-row" style="text-align: center">
+                <div class="side-line side-line-top"></div>
+                <div class="side-line side-line-bot"></div>
+                <h1>
+                    <i class="popular-eye-icn icn icn-right1"></i>
+                    <i class="popular-eye-icn icn icn-right2"></i>
+                    <i class="popular-eye-icn icn icn-right3"></i>
+                        رزومه و اطلاعات هنرمند
+                    <i class="popular-eye-icn icn icn-left1"></i>
+                    <i class="popular-eye-icn icn icn-left2"></i>
+                    <i class="popular-eye-icn icn icn-left3"></i>
+                </h1>
+            </div>
             <div class="tab-content float-right box-content">
 
 
@@ -103,11 +117,20 @@
                                 </div>
                                 <div class="user-info-row">
                                     <div class="info-label"> آدرس اینستاگرام:</div>
-                                    <div class="info-value"><a target="_blank" href="https://instagram.com/{{$user->social_in}}">{{$user->social_in}}</a></div>
+                                    <div class="info-value">
+                                        <a target="_blank" href="https://instagram.com/{{$user->social_in}}">
+                                            <i class="instagram-icn icn" style="color: #B433AC;font-size: 16px"></i> {{$user->social_in}}
+                                        </a>
+
+                                    </div>
                                 </div>
                                 <div class="user-info-row">
                                     <div class="info-label"> آدرس فیسبوک:</div>
-                                    <div class="info-value"><a target="_blank" href="https://facebook.com/{{$user->social_fb}}"> {{$user->social_fb}}</a></div>
+                                    <div class="info-value">
+                                        <a target="_blank" href="https://facebook.com/{{$user->social_fb}}">
+                                            <i class="facebook-icn icn" style="color: #0a568c;font-size: 16px"></i> {{$user->social_fb}}
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -120,7 +143,19 @@
         </section>
 
         <section id="public-bottom-section" class="row">
-
+            <div class="head-row" style="text-align: center">
+                <div class="side-line side-line-top"></div>
+                <div class="side-line side-line-bot"></div>
+                <h1>
+                    <i class="popular-eye-icn icn icn-right1"></i>
+                    <i class="popular-eye-icn icn icn-right2"></i>
+                    <i class="popular-eye-icn icn icn-right3"></i>
+                   نمونه کارها و گالری
+                    <i class="popular-eye-icn icn icn-left1"></i>
+                    <i class="popular-eye-icn icn icn-left2"></i>
+                    <i class="popular-eye-icn icn icn-left3"></i>
+                </h1>
+            </div>
             <article class="flex-row" style="margin-bottom: 100px;justify-content: space-between !important; flex-flow: row wrap ">
                 @foreach($images as $image)
                 {{--<div class="item">--}}
@@ -134,7 +169,7 @@
                     <div class="img-item" style="margin: 20px 3px !important;width: 30% !important;">
                         <div class="img-hover">
                             <h4>
-                                <a href="public-profile.html" class="shooter-pack">
+                                <a href="" class="shooter-pack">
                                     <span class="camera-icn icn"></span>
                                     <img src="{{asset($image->user->avatar_url)}}" class="shooter-img img-circle">
                                     <span class="shooter-name">{{$image->user->first_name}} {{$image->user->last_name}}</span>
@@ -172,13 +207,7 @@
                         <li><span class="fa fa-angle-double-left"></span></li>
                     </ul>
 
-                    <p class="item-count">
-                        نمایش
-                        ۱ تا ۱۲
-                        از
-                        ۱۴۰
-                        تصویر
-                    </p>
+
                 </div>
 
             </article>

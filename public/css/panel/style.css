@@ -5828,7 +5828,7 @@ body.body-small .vote-icon {
   float: right;
 }
 .metismenu .arrow {
-  float: right;
+  float: left;
   line-height: 1.42857;
 }
 .metismenu .glyphicon.arrow:before {

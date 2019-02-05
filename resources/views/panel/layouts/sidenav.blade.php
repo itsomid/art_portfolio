@@ -27,14 +27,22 @@
                 </div>
             </li>
             <li id="home" class="active">
-                <a href="{{route('panel/dashboard')}} "> <span class="nav-label">پیشخوان</span></a>
+                <a href="{{route('panel/dashboard')}} "> <i class="fa fa-th-large"></i> <span class="nav-label">پیشخوان</span></a>
             </li>
-            <li id="gallery" >
-                <a href="{{route('panel/image/get')}} "> <span class="nav-label">عکس ها</span></a>
+            <li id="gallery">
+                <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">گالری</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse ">
+                    <li id="image">
+                        <a href="{{route('panel/image/get')}}"> <span class="nav-label">عکس های شما</span> </a>
+                    </li>
+                    <li id="newimage">
+                        <a href="{{route('panel/image/add/get')}}"> <span class="nav-label">افزودن عکس جدید</span> </a>
+                    </li>
 
+                </ul>
             </li>
             <li id="user">
-                <a href="{{route('panel/user/show')}}"> <span class="nav-label">اطلاعات کاربری</span> </a>
+                <a href="{{route('panel/user/show')}}"> <i class="fa fa-user"></i><span class="nav-label"> اطلاعات کاربری</span> </a>
             </li>
         </ul>
 

@@ -37,7 +37,10 @@
 <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="/js/scripts.js"></script>
 <script src="/js/click-scripts.js"></script>
-
+    <script>
+        $('#pro-img').featherlightGallery();
+        $('figure span.gallery-search-plus').featherlightGallery();
+    </script>
 @yield('script')
 </body>
 </html>

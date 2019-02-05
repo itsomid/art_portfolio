@@ -39,7 +39,7 @@ class UserController extends Controller
             $user->social_fb = $request->input("facebook");
             $user->art_category = $request->input("art_category");
             $user->email = !is_null($request->input("email")) ? $request->input("email") : $user->email;
-
+            $user->details = $request->input("details");
             $password = $request->input('password');
             if (!is_null($password)) {
                 $user->password = bcrypt($password);

@@ -1,6 +1,6 @@
 <div class="footer">
     <div class="pull-right">
-       هنرمندی
+       سون آرتس
     </div>
     <div>
         <strong>Copyright</strong> Omid &copy; {{ date('Y') }}

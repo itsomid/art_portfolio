@@ -114,7 +114,6 @@
 }
 .music-icn:before {
     content: "\e918";
-     
 }
 .nature-icn:before {
     content: "\e919";
@@ -122,7 +121,7 @@
 }
 .new-icn:before {
     content: "\e91a";
-     
+
 }
 .password-icn:before {
     content: "\e91b";

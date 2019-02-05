@@ -1479,7 +1479,7 @@ ul li {
 }
 
 .swiper-item a {
-    width: 9.3em;
+    width: 18rem;
     position: absolute;
     right: 15px;
     bottom: 12px;
@@ -1523,7 +1523,7 @@ ul li {
 }
 
 .swiper-item:hover a {
-    width: 10.8em;
+    width: 21rem;
 }
 
 .swiper-item:hover a .icn {
@@ -1595,7 +1595,9 @@ ul li {
     background: #16314c;
     background: linear-gradient(to bottom, #16314c, #16314ccf);
 }
-
+#search-page aside .part-wrapper a {
+    color: #fff;
+}
 #search-page aside .part-wrapper h3, #search-page article .part-wrapper h1 {
     margin-bottom: 5px;
     margin-top: 0;
@@ -1619,7 +1621,7 @@ ul li {
     transition: all .3s;
 }
 
-#search-page aside .part-wrapper ul li:hover, #search-page aside .part-wrapper ul li:active, #search-page aside .part-wrapper ul li:focus {
+#search-page aside .part-wrapper ul li:hover a, #search-page aside .part-wrapper ul li.active a, #search-page aside .part-wrapper ul li:focus a{
     color: #ffe23b;
 }
 
@@ -1627,7 +1629,7 @@ ul li {
     padding-bottom: 9px;
 }
 
-#search-page aside li .sort-option {
+#search-page aside li a .sort-option {
     display: inline-block;
     font-size: 15px;
 }

@@ -22,6 +22,8 @@ class ImageController extends Controller
 
     public function add(Request $request)
     {
+        if ($request->isMethod('get'))
+            return view('panel.image_add');
 
         $validator = Validator::make($request->all(),[
             'image'=>'mimes:jpeg,jpg,png,gif|required|max:2000',
@@ -36,7 +38,7 @@ class ImageController extends Controller
             $image->details = $request->details;
             if ($request->has('image')) {
 
-                $image->image_url = asset('storage/' . $request->file('image')->store('images/gallery', 'public'));
+                $image->image_url = asset('storage/' . $request->file('image')->storeAs('images/gallery'.'jpg', 'jpg'));
             }
             $image->save();
             return back()->with('message', 'عکس با موفقیت ذخیره شد.');
@@ -86,7 +88,7 @@ class ImageController extends Controller
     public function delete(Request $request,$id)
     {
         $image = Image::find($id);
-//        $image->delete();
+        $image->delete();
         return redirect()->route('panel/image/get')->with('image-delete', 'عکس با موفقیت حذف شد.');
         
     }

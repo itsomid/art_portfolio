@@ -6,7 +6,7 @@
     <div class="row justify-content-center" style="display: flex;justify-content: center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">ثبت نام کاربر</div>
+                <div class="card-header">ثبت نام در باشگاه هنرمندان</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">

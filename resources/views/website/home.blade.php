@@ -50,53 +50,50 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
-            <div class="item active first-time" style="background-image: url('/images/gallery/mountain-guy.jpeg')">
+            <div class="item active first-time" style="background-image: url('/images/gallery/mountain-guy.jpg')">
 
                 <div class="carousel-caption">
                     <h3>
                         <a href="public-profile.html" class="shooter-pack">
                             <span class="camera-icn icn"></span>
-                            <img src="/images/photographer/ali-khani.jpg" class="shooter-img img-circle"/>
-                            <span class="shooter-name">هنری مانچینی</span>
+                            <img src="{{$users[0]->avatar_url}}" class="shooter-img img-circle"/>
+                            <span class="shooter-name">{{$users[0]->first_name}} {{$users[0]->last_name}}</span>
                         </a>
                     </h3>
                     <p>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
-                        و متون بلکه روزنامه و مجله...
+                        رضا مرادی با اصالتی آذری در روستای کردکندی، شهرستان کبودرآهنگ متولد شد. پدر وی کشاورز بود و زمانی که وی ۳ ساله بود به تهران مهاجرت کرد. دوران کودکی و نوجوانی را در یک خانه اجاره‌ای کوچک در محله دروازه غار سپری کرد. او در مدرسه صادقیه اسلامی در کوچه گمرک تحصیلات ابتدایی خود را به پایان رساند. پرستویی با پس‌انداز کردن یازده هزار تومان خانه‌ای در حوالی ترمینال جنوب خرید. مدتی به ورزش علاقه نشان داد و دروازه‌بان تیم کارگران بود. پس از این زمان به مرکز رفاه نازی‌آباد رفت و شروع به آموختن تئاتر کرد. پرویز پرستویی در سال ۱۳۶۰ و زمانی که ۲۶ سال سن داشت به عنوان منشی در دادگستری تهران مشغول به کار شد، امّا پس از مدتی به خاطر علاقهٔ وافر به تئاتر رفت و تا پایان در آنجا مشغول به کار شد.
                     </p>
-                    <a href="search.html" class="btn btn-default btn-custom-link"> مشاهده بیشتر </a>
+                    <a href="{{route('profile/single',['id'=>1])}}" class="btn btn-default btn-custom-link"> مشاهده بیشتر </a>
                 </div>
             </div>
-            <div class="item first-time" style="background-image: url('/images/gallery/coffee-black.jpeg');">
+            <div class="item first-time" style="background-image: url('/images/gallery/coffee-black.jpg');">
                 <div class="carousel-caption">
                     <h3>
-                        <a href="public-profile.html" class="shooter-pack">
+                        <a href="/profile/3" class="shooter-pack">
                             <span class="camera-icn icn"></span>
-                            <img src="/images/photographer/mahsa-vahdat.jpg" class="shooter-img img-circle"/>
-                            <span class="shooter-name">الیزابت جانسون</span>
+                            <img src="{{$users[2]->avatar_url}}" class="shooter-img img-circle"/>
+                            <span class="shooter-name">{{$users[2]->first_name}} {{$users[2]->last_name}}</span>
                         </a>
                     </h3>
                     <p>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
-                        و متون بلکه روزنامه و مجله...
+                        مهسا وحدت با اصالتی آذری در روستای کردکندی، شهرستان کبودرآهنگ متولد شد. پدر وی کشاورز بود و زمانی که وی ۳ ساله بود به تهران مهاجرت کرد. دوران کودکی و نوجوانی را در یک خانه اجاره‌ای کوچک در محله دروازه غار سپری کرد. او در مدرسه صادقیه اسلامی در کوچه گمرک تحصیلات ابتدایی خود را به پایان رساند. پرستویی با پس‌انداز کردن یازده هزار تومان خانه‌ای در حوالی ترمینال جنوب خرید. مدتی به ورزش علاقه نشان داد و دروازه‌بان تیم کارگران بود. پس از این زمان به مرکز رفاه نازی‌آباد رفت و شروع به آموختن تئاتر کرد. پرویز پرستویی در سال ۱۳۶۰ و زمانی که ۲۶ سال سن داشت به عنوان منشی در دادگستری تهران مشغول به کار شد، امّا پس از مدتی به خاطر علاقهٔ وافر به تئاتر رفت و تا پایان در آنجا مشغول به کار شد.
                     </p>
-                    <a href="search.html" class="btn btn-default btn-custom-link"> مشاهده بیشتر </a>
+                    <a href="/profile/3" class="btn btn-default btn-custom-link"> مشاهده بیشتر </a>
                 </div>
             </div>
-            <div class="item first-time" style="background-image: url('/images/gallery/sky-beauty.jpeg');">
+            <div class="item first-time" style="background-image: url('/images/gallery/sky-beauty.jpg');">
                 <div class="carousel-caption">
                     <h3>
-                        <a href="public-profile.html" class="shooter-pack">
+                        <a href="/profile/4" class="shooter-pack">
                             <span class="camera-icn icn"></span>
-                            <img src="images/photographer/negin-sehat.jpg" class="shooter-img img-circle"/>
-                            <span class="shooter-name">نگار متولیان</span>
+                            <img src="{{$users[3]->avatar_url}}" class="shooter-img img-circle"/>
+                            <span class="shooter-name">{{$users[3]->first_name}} {{$users[3]->last_name}}</span>
                         </a>
                     </h3>
                     <p>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
-                        و متون بلکه روزنامه و مجله...
+                        نگین صحت با اصالتی آذری در روستای کردکندی، شهرستان کبودرآهنگ متولد شد. پدر وی کشاورز بود و زمانی که وی ۳ ساله بود به تهران مهاجرت کرد. دوران کودکی و نوجوانی را در یک خانه اجاره‌ای کوچک در محله دروازه غار سپری کرد. او در مدرسه صادقیه اسلامی در کوچه گمرک تحصیلات ابتدایی خود را به پایان رساند. پرستویی با پس‌انداز کردن یازده هزار تومان خانه‌ای در حوالی ترمینال جنوب خرید. مدتی به ورزش علاقه نشان داد و دروازه‌بان تیم کارگران بود. پس از این زمان به مرکز رفاه نازی‌آباد رفت و شروع به آموختن تئاتر کرد. پرویز پرستویی در سال ۱۳۶۰ و زمانی که ۲۶ سال سن داشت به عنوان منشی در دادگستری تهران مشغول به کار شد، امّا پس از مدتی به خاطر علاقهٔ وافر به تئاتر رفت و تا پایان در آنجا مشغول به کار شد.
                     </p>
-                    <a href="search.html" class="btn btn-default btn-custom-link"> مشاهده بیشتر </a>
+                    <a href="/profile/4" class="btn btn-default btn-custom-link"> مشاهده بیشتر </a>
                 </div>
             </div>
 
@@ -113,7 +110,7 @@
         </a>
     </section>
     <main id="down-page-bg" >
-        <section id="popular-items" >
+        <section id="popular-items" style="margin: 30px 0 80px 0">
             <div class="head-row">
                 <!--<div class="side-line side-line-top"></div>-->
                 <!--<div class="side-line side-line-bot"></div>-->
@@ -128,17 +125,18 @@
                 </h1>
             </div>
 
-            <section class="flex-row">
+            <section class="flex-row" style="justify-content: space-around !important;">
                 <article class="cat-item-wrapper">
-                    <a href="search.html" class="cat-item">
-                        <i class="music-icn icn"></i>
+                    <a href="{{route('art',['name'=>'painting'])}}" class="cat-item">
+
+                        <i class="fa fa-paint-brush" style="font-size: 20px"></i>
                         <h4>
                             هنر ترسیمی
                         </h4>
                     </a>
                 </article>
                 <article class="cat-item-wrapper">
-                    <a href="search.html" class="cat-item">
+                    <a href="{{route('art',['name'=>'visual'])}}" class="cat-item">
                         <i class="inspire-icn icn"></i>
                         <h4>
                             هنر تجسمی
@@ -146,7 +144,7 @@
                     </a>
                 </article>
                 <article class="cat-item-wrapper">
-                    <a href="search.html" class="cat-item">
+                    <a href="{{route('art',['name'=>'music'])}}" class="cat-item">
                         <i class="music-icn icn"></i>
                         <h4>
                             موسیقی
@@ -154,7 +152,7 @@
                     </a>
                 </article>
                 <article class="cat-item-wrapper">
-                    <a href="search.html" class="cat-item">
+                    <a href="{{route('art',['name'=>'architecture'])}}" class="cat-item">
                         <i class="seasons-icn icn"></i>
                         <h4>
                             معماری
@@ -162,15 +160,16 @@
                     </a>
                 </article>
                 <article class="cat-item-wrapper">
-                    <a href="search.html" class="cat-item">
-                        <i class="masks-icn icn"></i>
+                    <a href="{{route('art',['name'=>'cinema'])}}" class="cat-item">
+
+                        <i class="fa fa-film" style="font-size: 20px"></i>
                         <h4>
                             سینما
                         </h4>
                     </a>
                 </article>
                 <article class="cat-item-wrapper">
-                    <a href="search.html" class="cat-item">
+                    <a href="{{route('art',['name'=>'performing'])}}" class="cat-item">
                         <i class="masks-icn icn"></i>
                         <h4>
                             حرکات نمايشي
@@ -178,20 +177,17 @@
                     </a>
                 </article>
                 <article class="cat-item-wrapper">
-                    <a href="search.html" class="cat-item">
-                        <i class="masks-icn icn"></i>
+                    <a href="{{route('art',['name'=>'literature'])}}" class="cat-item">
+                        <i class="fa fa-book" style="font-size: 20px"></i>
                         <h4>
                             ادبیات
                         </h4>
                     </a>
                 </article>
             </section>
-
-
         </section>
-
     </main>
-    <section id="popular-items" >
+    <section id="popular-items" style="margin: 30px 0 100px 0" >
         <div class="head-row">
             <div class="side-line side-line-top"></div>
             <div class="side-line side-line-bot"></div>
@@ -211,9 +207,9 @@
                 <div class="img-item">
                     <div class="img-hover">
                         <h4>
-                            <a href="public-profile.html" class="shooter-pack">
+                            <a href="{{route('profile/single',['id'=>$image->user->id])}}" class="shooter-pack">
                                 <span class="camera-icn icn"></span>
-                                <img src="{{$image->image_url}}" class="shooter-img img-circle"/>
+                                <img src="{{$image->user->avatar_url}}" class="shooter-img img-circle"/>
                                 <span class="shooter-name">{{$image->user->first_name}} {{$image->user->last_name}}</span>
                             </a>
                         </h4>
@@ -233,7 +229,7 @@
         </article>
 
         <div id="popular-items-ending">
-            <a href="search.html" class="btn btn-default btn-custom-link2">مشاهده موارد بیشتر </a>
+            <a href="{{route('art',['name'=>'all'])}}" class="btn btn-default btn-custom-link2">مشاهده موارد بیشتر </a>
         </div>
 
     </section>
@@ -264,9 +260,9 @@
                         <h4>
                            {{$user->first_name}} {{$user->last_name}}
                         </h4>
-                        <a href="{{route('profiles',['id'=>$user->id])}}">
-                            مشاهده عکس ها
-                            <span class="camera-icn icn"></span>
+                        <a href="{{route('profile/single',['id'=>$user->id])}}">
+                            مشاهده رزومه و گالری
+                            <span class="contact-icn icn"></span>
                         </a>
                     </figure>
                 @endforeach

@@ -9,6 +9,13 @@ use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
+    public function getGallery()
+    {
+        $users =  User::with('image')->get();
+        return view('website.gallery',['users'=>$users]);
+    }
+
+
     public function index()
     {
 
@@ -42,8 +49,15 @@ class HomeController extends Controller
 
     public function getArt($name)
     {
-       $users_image = User::with('image')->where('art_category',$name)->get();
-       return view('website.main_art',['images'=>$users_image]);
+
+        if ($name == "all")
+            $users_images = User::with('image')->get();
+        else
+         $users_images = User::with('image')->where('art_category',$name)->get();
+//        return $users_images[0]->image;
+       return view('website.main_art',['users_images'=>$users_images,'art_category'=>$name]);
 
     }
+
+
 }

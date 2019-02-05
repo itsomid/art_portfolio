@@ -24,6 +24,23 @@
                     <a href="{{route('profile/single',['id'=>$user->id])}}">
                         <img class="img-responsive img-circle" style="width: 200px" src="{{$user->avatar_url}}">
                         <h3>{{$user->first_name}} {{$user->last_name}}</h3>
+                        <h4 style="padding-top: 10px">
+                            @if($user->art_category == 'cinema')
+                              سینما
+                            @elseif($user->art_category == 'architecture')
+                              معماری
+                            @elseif($user->art_category == 'music')
+                                موسیقی
+                            @elseif($user->art_category == 'visual')
+                              هنر تجسمی
+                            @elseif($user->art_category == 'painting')
+                                 هنر ترسیمی
+                            @elseif($user->art_category == 'performing')
+                                 حرکات نمایشی
+                            @else
+                                 ادبیات
+                            @endif
+                        </h4>
                     </a>
                 </div>
             @endforeach

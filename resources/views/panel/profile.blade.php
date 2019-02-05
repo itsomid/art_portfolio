@@ -6,7 +6,8 @@
     اطلاعات کاربری
 @endsection
 @section('breadmenu')
-    <li><a href="{{route('panel/dashboard')}}">اطلاعات کاربری</a></li>
+    <li><a href="{{route('panel/dashboard')}}">خانه</a></li>
+    <li><a class="active" href=""><strong>اطلاعات کاربری</strong></a></li>
 @endsection
 @section('content')
 
@@ -35,7 +36,7 @@
                                 <strong>{{ session('error') }}</strong>
                             </div>
                         @endif
-                            @if( !is_null(session('message')) )
+                        @if( !is_null(session('message')) )
                             <div class="alert alert-success">
                                 <strong>{{ session('message') }}</strong>
                             </div>
@@ -112,13 +113,27 @@
                             <div class="col-sm-4">
                                 <select class="form-control" name="art_category">
 
-                                    <option value="cinema"  {{$user->art_category == "cinema" ? "selected=\"selected\"" : ""}}>سینما</option>
-                                    <option value="architecture" {{$user->art_category == "architecture" ? "selected=\"selected\"" : ""}}>معماری</option>
-                                    <option value="music" {{$user->art_category == "music" ? "selected=\"selected\"" : ""}}>موسیقی</option>
-                                    <option value="visual" {{$user->art_category == "visual" ? "selected=\"selected\"" : ""}}>هنر تجسمی</option>
-                                    <option value="painting" {{$user->art_category == "painting" ? "selected=\"selected\"" : ""}}>هنر ترسیمی</option>
-                                    <option value="performing" {{$user->art_category == "performing" ? "selected=\"selected\"" : ""}}>حرکات نمایشی</option>
-                                    <option value="literature" {{$user->art_category == "literature" ? "selected=\"selected\"" : ""}}>ادبیات</option>
+                                    <option value="cinema" {{$user->art_category == "cinema" ? "selected=\"selected\"" : ""}}>
+                                        سینما
+                                    </option>
+                                    <option value="architecture" {{$user->art_category == "architecture" ? "selected=\"selected\"" : ""}}>
+                                        معماری
+                                    </option>
+                                    <option value="music" {{$user->art_category == "music" ? "selected=\"selected\"" : ""}}>
+                                        موسیقی
+                                    </option>
+                                    <option value="visual" {{$user->art_category == "visual" ? "selected=\"selected\"" : ""}}>
+                                        هنر تجسمی
+                                    </option>
+                                    <option value="painting" {{$user->art_category == "painting" ? "selected=\"selected\"" : ""}}>
+                                        هنر ترسیمی
+                                    </option>
+                                    <option value="performing" {{$user->art_category == "performing" ? "selected=\"selected\"" : ""}}>
+                                        حرکات نمایشی
+                                    </option>
+                                    <option value="literature" {{$user->art_category == "literature" ? "selected=\"selected\"" : ""}}>
+                                        ادبیات
+                                    </option>
 
                                 </select>
                             </div>
@@ -129,6 +144,13 @@
                                 <input name="education" type="text" placeholder="تحصیلات"
                                        class="form-control  m-b"
                                        value="{{ $user->education }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">بیوگرافی</label>
+                            <div class="col-sm-4">
+                                <textarea name="details" type="text" placeholder="آدرس"
+                                       class="form-control m-b" rows="9">{{ $user->details }}</textarea>
                             </div>
                         </div>
                         <div class="form-group">
@@ -148,16 +170,19 @@
                             </div>
                         </div>
 
+
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">آدرس اینستاگرام (فقط نام کاربری خود در اینستاگرام را وارد کنید)</label>
+                            <label class="col-sm-2 control-label">آدرس اینستاگرام (فقط نام کاربری خود در اینستاگرام را
+                                وارد کنید)</label>
                             <div class="col-sm-4">
                                 <input name="instagram" type="text" placeholder="نام"
                                        class="form-control "
                                        value="{{ $user->social_in }}">
                             </div>
                         </div>
-                            <div class="form-group">
-                            <label class="col-sm-2 control-label">آدرس فیسبوک (فقط نام کاربری خود در فیسبوک را وارد کنید)</label>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">آدرس فیسبوک (فقط نام کاربری خود در فیسبوک را وارد
+                                کنید)</label>
                             <div class="col-sm-4">
                                 <input name="facebook" type="text" placeholder="نام"
                                        class="form-control "

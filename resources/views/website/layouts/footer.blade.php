@@ -2,24 +2,24 @@
     <section id="footer-top" class="flex-row">
         <article class="flex-column">
             <p>
-                هنرمندی را همه جا دنبال کنید...
+                سِوِن آرتس را همه جا دنبال کنید...
             </p>
         </article>
         <article class="flex-column">
             <a href>
-                <i class="pinterest-icn icn"></i>
+                <i class="pinterest-icn icn" style="color: red;"></i>
             </a>
             <a href>
-                <i class="instagram-icn icn"></i>
+                <i class="instagram-icn icn" style="color: #B433AC;"></i>
             </a>
             <a href>
-                <i class="telegram-icn icn"></i>
+                <i class="telegram-icn icn" style="color: #0e9aef"></i>
             </a>
             <a href>
-                <i class="twitter-icn icn"></i>
+                <i class="twitter-icn icn" style="color: #1EA1F2"></i>
             </a>
             <a href>
-                <i class="linkedin-icn icn"></i>
+                <i class="linkedin-icn icn" style="color:#007BB6;"></i>
             </a>
         </article>
         <hr/>

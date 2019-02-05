@@ -898,9 +898,9 @@ figure.effect-lexi:hover p {
 }
 
 .form-holder .custom-form .custom-form-control {
-    -webkit-transition: width 4s, opacity 3s, padding 1s, height 2s;
-    -o-transition: width 4s, opacity 3s, padding 1s, height 2s;
-    transition: width 4s, opacity 3s, padding 1s, height 2s;
+    -webkit-transition: width 2s, opacity 3s, padding 1s, height 2s;
+    -o-transition: width 2s, opacity 3s, padding 1s, height 2s;
+    transition: width 2s, opacity 3s, padding 1s, height 2s;
 }
 
 .form-holder .custom-form textarea {
