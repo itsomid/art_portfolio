@@ -37,17 +37,18 @@
 
 <div id="wrapper">
 
-
     @include('panel.layouts.sidenav')
     <div id="page-wrapper" class="gray-bg" style="min-height: 925px;">
         @include('panel.layouts.header')
-        <div class="wrapper wrapper-content">
-            @yield('content')
-        </div>
+            <div class="wrapper wrapper-content">
+                @yield('content')
+            </div>
         @include('panel.layouts.footer')
     </div>
 </div>
 <script src="/js/panel/jquery-3.1.1.min.js"></script>
+
+
 <script src="/js/panel/bootstrap.min.js"></script>
 <script src="/js/panel/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="/js/panel/plugins/slimscroll/jquery.slimscroll.min.js"></script>
